@@ -42,3 +42,4 @@ client.on('message', (message) => {
         message.channel.sendMessage(response);
     }
 }); 
+client.login(config.token)

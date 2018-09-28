@@ -1,7 +1,7 @@
 {
-    "name": "yugobot",
+    "name": "proton",
     "version": "1.0.0",
-    "description": "Just a Yugo",
+    "description": "just a retarded bot",
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",

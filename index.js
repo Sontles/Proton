@@ -28,7 +28,7 @@ client.on("guildMemberAdd", (member) => {
  });
 var mRespond = {
     "ayy": "Ayy lmao!",
-    "who made proton?": "Proton was made by <@?260415308169347083>"
+    "who made proton?": "Proton was made by <@260415308169347083>"
 };
 
 function getResponse(message) {mRespond[message.content.toLowerCase()];

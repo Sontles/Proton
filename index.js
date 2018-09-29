@@ -45,12 +45,5 @@ if(message.content.startsWith('whats a proton?') || message.content.startsWith('
     if (PROTONAPI == "yo wtf is this") {
         message.channel.send("Dude i have no fucking idea")
     }
-})
-
-client.login(config.token)
-
- client.on('ready', () => {
-    console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
-    client.user.setStatus('Online')
-    client.user.setActivity('with Reality')
 });
+client.login(config.token)

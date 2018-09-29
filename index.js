@@ -52,15 +52,15 @@ if(message.content.startsWith('whats a proton?') || message.content.startsWith('
     client.login(config.token)
 });
 client.on("message", (message) => {
-    var YUGOAPI = message.content.toLowerCase();
-    if(YUGOAPI == "this is so sad, yugo play despacito") {
+    var PROTONAPI = message.content.toLowerCase();
+    if(PROTONAPI == "play the best meme song ever") {
         const voiceChannel = message.member.voiceChannel;
         if (!voiceChannel) {
-          return message.reply(`Please be in a voice channel first!`);
+          return message.reply(`Yeah sure, just get in the VC first...`);
         }
         voiceChannel.join()
           .then(connnection => {
-            let stream = yt("https://youtu.be/kJQP7kiw5Fk", {audioonly: true});
+            let stream = yt("https://www.youtube.com/watch?v=5hxibHJOE5E&list=PLtqsEv7LF7AkgRvxjbdHasO1YcSQ9pyjZ", {audioonly: true});
             const dispatcher = connnection.playStream(stream);
             dispatcher.on('end', () => {
               voiceChannel.leave();

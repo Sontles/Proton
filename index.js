@@ -49,7 +49,6 @@ if(message.content.startsWith('whats a proton?') || message.content.startsWith('
         message.author.send('wow, read this you dumb fuck')
         message.author.send('https://en.wikipedia.org/wiki/Proton')
     }
-    client.login(config.token)
 });
 client.on("message", (message) => {
     var PROTONAPI = message.content.toLowerCase();
@@ -68,3 +67,4 @@ client.on("message", (message) => {
         });
     }
 })
+client.login(config.token)

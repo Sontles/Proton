@@ -45,5 +45,26 @@ if(message.content.startsWith('whats a proton?') || message.content.startsWith('
     if (PROTONAPI == "yo wtf is this") {
         message.channel.send("Dude i have no fucking idea")
     }
+    if(message.content.startsWith('') || message.content.startsWith('whats a proton?')) {
+        message.author.send('wow, read this you dumb fuck')
+        message.author.send('https://en.wikipedia.org/wiki/Proton')
+    }
+    client.login(config.token)
 });
-client.login(config.token)
+client.on("message", (message) => {
+    var YUGOAPI = message.content.toLowerCase();
+    if(YUGOAPI == "this is so sad, yugo play despacito") {
+        const voiceChannel = message.member.voiceChannel;
+        if (!voiceChannel) {
+          return message.reply(`Please be in a voice channel first!`);
+        }
+        voiceChannel.join()
+          .then(connnection => {
+            let stream = yt("https://youtu.be/kJQP7kiw5Fk", {audioonly: true});
+            const dispatcher = connnection.playStream(stream);
+            dispatcher.on('end', () => {
+              voiceChannel.leave();
+            });
+        });
+    }
+})

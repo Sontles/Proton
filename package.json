@@ -1,22 +1,22 @@
 {
-    "name": "proton",
-    "version": "1.0.0",
-    "description": "just a retarded bot",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node index.js"
-    },
-    "author": "Sontles/Josia50",
-    "license": "ISC",
-    "dependencies": {
-      "cleverbot-node": "^0.3.11",
-      "discord.js": "^11.3.2",
-      "eris": "^0.7.2",
-      "express": "^4.16.3",
-      "http": "0.0.0",
-      "moment": "^2.22.2",
-      "ytdl-core": "^0.20.4",
-      "randomcolor": "^0.5.3"
-    }
+  "name": "proton",
+  "version": "1.0.0",
+  "description": "just a retarded bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Sontles/Josia50",
+  "license": "ISC",
+  "dependencies": {
+    "cleverbot-node": "^0.3.11",
+    "discord.js": "^11.3.2",
+    "eris": "^0.7.2",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "moment": "^2.22.2",
+    "randomcolor": "^0.5.3",
+    "ytdl-core": "^0.20.4"
   }
+}

@@ -42,6 +42,9 @@ if(message.content.startsWith('whats a proton?') || message.content.startsWith('
     if(PROTONAPI == "yeet") {
         message.channel.sendFile ("https://cdn.discordapp.com/attachments/463351454590042115/482238072113856522/Yeet_Sound_Effect.mp3", "yeet.mp3")
         }
+    if (PROTONAPI == "yo wtf is this") {
+        message.channel.send("Dude i have no fucking idea")
+    }
 })
 
 client.login(config.token)

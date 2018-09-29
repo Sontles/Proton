@@ -45,7 +45,7 @@ if(message.content.startsWith('whats a proton?') || message.content.startsWith('
     if (PROTONAPI == "yo wtf is this") {
         message.channel.send("Dude i have no fucking idea")
     }
-    if(message.content.startsWith('whats a proton?') || message.content.startsWith('whats a proton?')) {
+    if(message.content.startsWith('Whats a proton?') || message.content.startsWith('whats a proton?')) { 
         message.author.send('wow, read this you dumb fuck')
         message.author.send('https://en.wikipedia.org/wiki/Proton')
     }
@@ -67,4 +67,5 @@ client.on("message", (message) => {
         });
     }
 })
+
 client.login(config.token)

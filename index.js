@@ -52,7 +52,7 @@ if(message.content.startsWith('whats a proton?') || message.content.startsWith('
 });
 client.on("message", (message) => {
     var PROTONAPI = message.content.toLowerCase();
-    if(PROTONAPI == "Proton, play Sont's Mix") {
+    if(PROTONAPI == "proton, play sont's mix") {
         const voiceChannel = message.member.voiceChannel;
         if (!voiceChannel) {
           return message.reply(`Yeah sure, just get in the VC first...`);
@@ -67,5 +67,4 @@ client.on("message", (message) => {
         });
     }
 })
-
 client.login(config.token)
